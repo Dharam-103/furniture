@@ -23,9 +23,9 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from '@chakra-ui/icons';
-import { VscAccount }  from 'react-icons/vsc';
 import { BsBagHeartFill } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
+import UserLogin from '../Pages/UserLoginSignup/UserLogin';
 
 
 function Navbar() {
@@ -82,7 +82,7 @@ function Navbar() {
           w={"500px"}
         />
             <button style={{border:"none",cursor:"pointer"}} >
-         <VscAccount fontSize={"25px"}/>
+         <UserLogin/>
          </button>
          <button style={{border:"none",cursor:"pointer"}} >
          <AiOutlineHeart fontSize={"25px"}/>
@@ -105,6 +105,7 @@ function Navbar() {
             }}>
             Admin
           </Button>
+         
         </Stack>
       </Flex>
 
