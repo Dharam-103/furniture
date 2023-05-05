@@ -1,0 +1,484 @@
+{
+"beds":[
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/zoey-non-storage-bed?sku=FNBDNS43CW35089&src=subcat",
+  "discount": 46,
+  "name": "Zoey Engineered Wood Queen Size Bed in Classic Walnut Finish",
+  "brand": "By SimplyWud",
+  "price": 17999,
+  "emi": 9719
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/boston-storage-bed?sku=FNCOMB11MH35926&src=subcat",
+  "discount": 42,
+  "name": "Boston Solid Wood Queen Size Box Storage Bed in Teak Finish",
+  "brand": "By Classic Mattress",
+  "price": 74998,
+  "emi": 43493
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/beirut-bed-queen-size-mahogany?sku=FNBDNS11TK35069&src=subcat",
+  "discount": 41,
+  "name": "Beirut Solid Wood Queen Size Bed in Teak Finish",
+  "brand": "By Classic Mattress",
+  "price": 30299,
+  "emi": 17876
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/duetto-platform-bed?sku=FNBDNS12TT11043&src=subcat",
+  "discount": 46,
+  "name": "Duetto Solid Wood King Size Bed in Two Tone Finish",
+  "brand": "By Classic Mattress",
+  "price": 77899,
+  "emi": 42065
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/faroe-upholstered-storage-bed?sku=FNBDST51GY35005&src=subcat",
+  "discount": 38,
+  "name": "Faroe Engineered Wood Queen Size Drawer Storage Upholstered Bed in Grey ...",
+  "brand": "By Classic Mattress",
+  "price": 46799,
+  "emi": 29015
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/florence-bed?sku=FNCOMB11TK35904&src=subcat",
+  "discount": 52,
+  "name": "Florence Solid Wood Queen Size Bed in Teak Finish",
+  "brand": "By Classic Mattress",
+  "price": 62598,
+  "emi": 30070
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/eddard-bed?sku=FVBDNS33BR33925&src=subcat",
+  "discount": 45,
+  "name": "Leeds Solid Wood King Size Bed in Matte Finish",
+  "brand": "By Durian",
+  "price": 60400,
+  "emi": 33220
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/covelo-storage-single-bed?sku=FNBDST43RW35148&src=subcat",
+  "discount": 43,
+  "name": "Covelo Engineered Wood Single Box Storage Bed In Rustic Walnut Finish",
+  "brand": "By Classic Mattress",
+  "price": 24999,
+  "emi": 14249
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/florence-storage-bed?sku=FNCOMB11TK31903&src=subcat",
+  "discount": 51,
+  "name": "Florence Solid Wood King Size Drawer Storage Bed in Teak Finish",
+  "brand": "By Classic Mattress",
+  "price": 96497,
+  "emi": 47048
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/tahiti-platform-bed?sku=FNBDNS11TK35100&src=subcat",
+  "discount": 41,
+  "name": "Tahiti Solid Wood Queen Size Bed in Teak Finish",
+  "brand": "By Classic Mattress",
+  "price": 65499,
+  "emi": 38644
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/stanhope-upholstered-storage-bed?sku=FNBDST51GY11095&src=subcat",
+  "discount": 30,
+  "name": "Stanhope Engineered Wood King Size Drawer Storage Upholstered Bed in Finish",
+  "brand": "By Classic Mattress",
+  "price": 66299,
+  "emi": 46409
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/covelo-storage-bed-with-headboard-shelves-fncomb43xx35468?sku=FNBDST43RW35141&src=subcat",
+  "discount": 48,
+  "name": "Covelo Engineered Wood Queen Size Box Storage Bed in Rustic Walnut Finish",
+  "brand": "By Classic Mattress",
+  "price": 42899,
+  "emi": 22307
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/belize-upholstered-bed?sku=FNBDNS51BL15098&src=room",
+  "discount": 30,
+  "name": "Belize Engineered Wood Queen Size Upholstered Bed in Finish",
+  "brand": "By Urban Ladder",
+  "price": 44999,
+  "emi": 31499
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/nerja-solid-wood-single-non-storage-bed-in-teak-finish-fnxxns11tk35209?sku=FNBDNS11TK35209&src=room",
+  "discount": 54,
+  "name": "Nerja Solid Wood  Single Non Storage Bed in Teak Finish",
+  "brand": "By Urban Ladder",
+  "price": 17199,
+  "emi": 7911
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/valencia-storage-bed?sku=FNCOMB11TK35928&src=subcat",
+  "discount": 43,
+  "name": "Valencia Solid Wood Queen Size Box Storage Bed in Teak Finish",
+  "brand": "By Urban Ladder",
+  "price": 78798,
+  "emi": 44978
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/athens-bed?sku=FNBDNS15DW25130&src=room",
+  "discount": 40,
+  "name": "Athens Solid Wood King Size Bed in Dark Walnut Finish",
+  "brand": "By Urban Ladder",
+  "price": 43399,
+  "emi": 26039
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/boston-compact-bed?sku=FNBDNS11TK38225&src=room",
+  "discount": 41,
+  "name": "Boston Solid Wood Size Bed in Teak Finish",
+  "brand": "By Urban Ladder",
+  "price": 37799,
+  "emi": 22301
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/valencia-bed?sku=FNCOMB11TK15898&src=room",
+  "discount": 55,
+  "name": "Valencia Solid Wood Queen Size Bed in Teak Finish",
+  "brand": "By Urban Ladder",
+  "price": 63498,
+  "emi": 28370
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/bean-solid-wood-king-non-storage-normal-bed-in-beige-colour-fvxxns62bg22159?sku=FVBDNS62BG22159&src=subcat",
+  "discount": 33,
+  "name": "Bean Solid Wood King Size Upholstered Bed in Beige Finish",
+  "brand": "By Febonic",
+  "price": 70239,
+  "emi": 47060
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/nilkamal-arthur-non-storage-engineered-wood-bed-fvxxns33rb20119?sku=FVBDNS33RB20124&src=subcat",
+  "discount": 46,
+  "name": "Arthur Engineered Wood Queen Size Non Storage Bed in Walnut Finish",
+  "brand": "By Nilkamal",
+  "price": 21000,
+  "emi": 11340
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/caprica-bed-mahogany-finish?sku=FNBDNS12MH15025&src=subcat",
+  "discount": 49,
+  "name": "Caprica Solid Wood Queen Size Non Storage Bed in Mahogany Finish",
+  "brand": "By Urban Ladder",
+  "price": 49599,
+  "emi": 25295
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/marieta-storage-bed?sku=FNCOMB11TK35923&src=subcat",
+  "discount": 42,
+  "name": "Marieta Solid Wood Queen Size Box Storage Bed in Teak Finish",
+  "brand": "By Urban Ladder",
+  "price": 78798,
+  "emi": 45356
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/cassiope-upholstered-storage-bed?sku=FNBDST51GY31004&src=subcat",
+  "discount": 25,
+  "name": "Cassiope Engineered Wood King Size Drawer Storage Upholstered Bed in Finish",
+  "brand": "By Urban Ladder",
+  "price": 54799,
+  "emi": 41099
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/terence-storage-bed?sku=FNCOMB11MH11442&src=subcat",
+  "discount": 52,
+  "name": "Terence Solid Wood King Size Drawer Storage Bed in Mahogany Finish",
+  "brand": "By Urban Ladder",
+  "price": 95497,
+  "emi": 45254
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/alaca-storage-bed?sku=FNCOMB11MH31484&src=subcat",
+  "discount": 52,
+  "name": "Alaca Solid Wood King Size Drawer Storage Bed in Mahogany Finish",
+  "brand": "By Urban Ladder",
+  "price": 94797,
+  "emi": 44876
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/sentosa-box-storage-platform-bed?sku=FNBDST12TT31115&src=subcat",
+  "discount": 44,
+  "name": "Sentosa Solid Wood King Size Box Storage Bed in Two Tone Finish",
+  "brand": "By Urban Ladder",
+  "price": 110599,
+  "emi": 61935
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/monarch-storage-bed?sku=FVBDST33TK34282&src=subcat",
+  "discount": 45,
+  "name": "Monarch Engineered Wood King Size Hydraulic Storage Bed in Finish",
+  "brand": "By Spacewood Furnishers Pvt. Ltd",
+  "price": 77553,
+  "emi": 42654
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/toshi-teen-bed-with-storage?sku=FNBDST43RW35137&src=subcat",
+  "discount": 52,
+  "name": "Toshi Engineered Wood Compact Size Drawer And Box Storage Bed in Rustic ...",
+  "brand": "By DreamCloud",
+  "price": 35799,
+  "emi": 17183
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/baltoro-high-gloss-hydraulic-storage-bed?sku=FNBDST41WL35099&src=subcat",
+  "discount": 46,
+  "name": "Baltoro Engineered Wood Queen Size Hydraulic Storage Bed in White Finish",
+  "brand": "By DreamCloud",
+  "price": 99399,
+  "emi": 53675
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/boston-storage-bed?sku=FNCOMB11TK35905&src=subcat",
+  "discount": 48,
+  "name": "Boston Solid Wood Queen Size Drawer Storage Bed in Teak Finish",
+  "brand": "By DreamCloud",
+  "price": 88397,
+  "emi": 45912
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/marieta-storage-bed?sku=FNCOMB11TK31733&src=subcat",
+  "discount": 52,
+  "name": "Marieta Solid Wood King Size Drawer Storage Bed in Teak Finish",
+  "brand": "By DreamCloud",
+  "price": 94797,
+  "emi": 44876
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/marieta-bed?sku=FNCOMB11TK35732&src=room",
+  "discount": 54,
+  "name": "Marieta Solid Wood Queen Size Bed in Teak Finish",
+  "brand": "By DreamCloud",
+  "price": 63498,
+  "emi": 28748
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/marieta-storage-bed?sku=FNCOMB11TK35733&src=subcat",
+  "discount": 53,
+  "name": "Marieta Solid Wood Queen Size Drawer Storage Bed in Teak Finish",
+  "brand": "By DreamCloud",
+  "price": 92197,
+  "emi": 42618
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/boston-storage-bed?sku=FNCOMB11TK35906&src=subcat",
+  "discount": 52,
+  "name": "Boston Solid Wood King Size Drawer Storage Bed in Teak Finish",
+  "brand": "By DreamCloud",
+  "price": 93597,
+  "emi": 44588
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/florence-bed?sku=FNCOMB11TK31904&src=subcat",
+  "discount": 51,
+  "name": "Florence Solid Wood King Size Bed in Teak Finish",
+  "brand": "By DreamCloud",
+  "price": 67298,
+  "emi": 32490
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/florence-storage-bed?sku=FNCOMB11TK35903&src=subcat",
+  "discount": 52,
+  "name": "Florence Solid Wood Queen Size Drawer Storage Bed in Teak Finish",
+  "brand": "By DreamCloud",
+  "price": 91297,
+  "emi": 43941
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/terence-storage-bed?sku=FNCOMB11MH31920&src=subcat",
+  "discount": 44,
+  "name": "Terence Solid Wood King Size Box Storage Bed in Mahogany Finish",
+  "brand": "By DreamCloud",
+  "price": 88898,
+  "emi": 49384
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/holmebrook-upholstered-bed?sku=FNBDNS51GY11047&src=subcat",
+  "discount": 35,
+  "name": "Holmebrook Engineered Wood King Size Drawer Storage Upholstered Bed in F...",
+  "brand": "By Urban Ladder",
+  "price": 58899,
+  "emi": 38284
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/alaca-bed?sku=FNCOMB11MH31485&src=room",
+  "discount": 53,
+  "name": "Alaca Solid Wood King Size Bed in Mahogany Finish",
+  "brand": "By Urban Ladder",
+  "price": 65598,
+  "emi": 30319
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/yuri-stackable-bed?sku=FNCOMB15DW33965&src=room",
+  "discount": 22,
+  "name": "Yuri Stackable Bed",
+  "brand": "By Urban Ladder",
+  "price": 31398,
+  "emi": 24490
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/boston-bed?sku=FNCOMB11TK31906&src=room",
+  "discount": 55,
+  "name": "Boston Solid Wood Queen Size Non Storage Bed in Teak Finish",
+  "brand": "By Urban Ladder",
+  "price": 59698,
+  "emi": 26885
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/marieta-storage-bed?sku=FNCOMB11TK31923&src=subcat",
+  "discount": 43,
+  "name": "Marieta Solid Wood King Size Box Storage Bed in Teak Finish",
+  "brand": "By Urban Ladder",
+  "price": 88198,
+  "emi": 50386
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/tahiti-platform-bed?sku=FNBDNS11MH35100&src=subcat",
+  "discount": 44,
+  "name": "Tahiti Solid Wood Queen Size Bed in Mahogany Finish",
+  "brand": "By Urban Ladder",
+  "price": 65499,
+  "emi": 36679
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/stanhope-upholstered-storage-bed?sku=FNBDST51BR11095&src=subcat",
+  "discount": 30,
+  "name": "Stanhope Engineered Wood King Size Drawer Storage Upholstered Bed in Finish",
+  "brand": "By Urban Ladder",
+  "price": 66299,
+  "emi": 46409
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/ohio-bed?sku=FNBDNS11TK15026&src=subcat",
+  "discount": 48,
+  "name": "Ohio Solid Wood Queen Size Non Storage Bed in Teak Finish",
+  "brand": "By Urban Ladder",
+  "price": 58799,
+  "emi": 30575
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/ohio-bed?sku=FNBDNS11MH15026&src=subcat",
+  "discount": 46,
+  "name": "Ohio Solid Wood Queen Size Non Storage Bed in Mahogany Finish",
+  "brand": "By Urban Ladder",
+  "price": 58799,
+  "emi": 31751
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/terence-storage-bed?sku=FNCOMB11TK11442&src=subcat",
+  "discount": 52,
+  "name": "Terence Solid Wood King Size Drawer Storage Bed in Teak Finish",
+  "brand": "By Urban Ladder",
+  "price": 95497,
+  "emi": 45254
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/boston-bed?sku=FNCOMB11TK31905&src=subcat",
+  "discount": 53,
+  "name": "Boston Solid Wood King Size Non Storage Bed in Teak Finish",
+  "brand": "By Urban Ladder",
+  "price": 64398,
+  "emi": 30031
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/stockholm-storage-bed?sku=FNCOMB11MH31921&src=subcat",
+  "discount": 44,
+  "name": "Stockholm Solid Wood King Size Box Storage Bed in Mahogany Finish",
+  "brand": "By Classic Mattress",
+  "price": 89198,
+  "emi": 49748
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/marieta-bed?sku=FNCOMB11TK31732&src=room",
+  "discount": 53,
+  "name": "Marieta Solid Wood King Size Bed in Teak Finish",
+  "brand": "By Urban Ladder",
+  "price": 65598,
+  "emi": 30319
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/stockholm-storage-bed?sku=FNCOMB11MH31991&src=subcat",
+  "discount": 52,
+  "name": "Stockholm Solid Wood King Size Drawer Storage Bed in Mahogany Finish",
+  "brand": "By Urban Ladder",
+  "price": 95797,
+  "emi": 45618
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/florence-storage-bed?sku=FNCOMB11MH35903&src=subcat",
+  "discount": 53,
+  "name": "Florence Solid Wood Queen Size Drawer Storage Bed in Mahogany Finish",
+  "brand": "By Urban Ladder",
+  "price": 91297,
+  "emi": 42861
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/valencia-storage-bed?sku=FNCOMB11TK11899&src=subcat",
+  "discount": 53,
+  "name": "Valencia Solid Wood King Size Drawer Storage Bed in Teak Finish",
+  "brand": "By Urban Ladder",
+  "price": 95797,
+  "emi": 45012
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/valencia-bed?sku=FNCOMB11TK11898&src=room",
+  "discount": 54,
+  "name": "Valencia Solid Wood King Size Bed in Teak Finish",
+  "brand": "By Urban Ladder",
+  "price": 66598,
+  "emi": 30455
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/valencia-storage-bed?sku=FNCOMB11TK31928&src=subcat",
+  "discount": 43,
+  "name": "Valencia Solid Wood King Size Box Storage Bed in Teak Finish",
+  "brand": "By Urban Ladder",
+  "price": 89198,
+  "emi": 50522
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/terence-storage-bed?sku=FNCOMB11MH35920&src=subcat",
+  "discount": 43,
+  "name": "Terence Solid Wood Queen Size Box Storage Bed in Mahogany Finish",
+  "brand": "By Urban Ladder",
+  "price": 78298,
+  "emi": 44261
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/terence-storage-bed?sku=FNCOMB11TK15442&src=subcat",
+  "discount": 53,
+  "name": "Terence Solid Wood Queen Size Drawer Storage Bed in Teak Finish",
+  "brand": "By Urban Ladder",
+  "price": 91697,
+  "emi": 42537
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/terence-bed?sku=FNCOMB11TK11441&src=room",
+  "discount": 53,
+  "name": "Terence Solid Wood King Size Bed in Teak Finish",
+  "brand": "By Urban Ladder",
+  "price": 66298,
+  "emi": 30697
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/terence-storage-bed?sku=FNCOMB11MH15442&src=subcat",
+  "discount": 53,
+  "name": "Terence Solid Wood Queen Size Drawer Storage Bed in Mahogany Finish",
+  "brand": "By Urban Ladder",
+  "price": 91697,
+  "emi": 42721
+ },
+ {
+  "image": "https:\/\/www.urbanladder.com\/products\/boston-storage-bed?sku=FNCOMB11MH31926&src=subcat",
+  "discount": 42,
+  "name": "Boston Solid Wood King Size Box Storage Bed in Teak Finish",
+  "brand": "By Urban Ladder",
+  "price": 86998,
+  "emi": 50098
+ }
+]
+}

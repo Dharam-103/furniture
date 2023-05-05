@@ -1,0 +1,260 @@
+{
+    "chairs":[
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/162604\/product\/Carven_lounge_chair_grey_replace_LP.jpg?1569471096",
+         "discount": 50,
+         "name": "Carven Lounge Chair in Dark Grey Fabric",
+         "brand": "By Urban Ladder",
+         "price": 31699,
+         "emi": 15849
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/82584\/product\/1956_Lounge___Ottoman_Replica_Black_LP.jpg?1519629745",
+         "discount": 52,
+         "name": "1956 Lounge Chair in Black Leatherette",
+         "brand": "By Chumbak",
+         "price": 109199,
+         "emi": 52415
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/162604\/product\/Carven_lounge_chair_grey_replace_LP.jpg?1569471096",
+         "discount": 40,
+         "name": "Owen Lounge Chair in Matte Mustard Yellow Fabric",
+         "brand": "By Urban Ladder",
+         "price": 14999,
+         "emi": 8999
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/554406\/product\/FVSTLC62BL19226_LP.jpg?1653378146",
+         "discount": 25,
+         "name": "French Lounge Chair in Blue Fabric",
+         "brand": "By Chumbak",
+         "price": 25995,
+         "emi": 19496
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/546233\/product\/FVSTCH51GR18258_LP.jpg?1652164539",
+         "discount": 25,
+         "name": "Begum Lounge Chair in Green Fabric",
+         "brand": "By Chumbak",
+         "price": 27995,
+         "emi": 20996
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/560459\/product\/FVSFLC62WA20159_LP.jpg?1653896606",
+         "discount": 48,
+         "name": "Lennon Lounge Chair in Ivory Fabric",
+         "brand": "By Timberly",
+         "price": 29900,
+         "emi": 15548
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/434792\/product\/Madonna_Swivel_Lounge_Chair_White_LP.jpg?1637584352",
+         "discount": 50,
+         "name": "Madonna Lounge Chair in White Leatherette",
+         "brand": "By Urban Ladder",
+         "price": 67299,
+         "emi": 33649
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/366276\/product\/Milo_Wing_Chair_LP.jpg?1628185589",
+         "discount": 43,
+         "name": "Milo Lounge Chair in Lapis Blue Fabric",
+         "brand": "By Urban Ladder",
+         "price": 32399,
+         "emi": 18467
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/162604\/product\/Carven_lounge_chair_grey_replace_LP.jpg?1569471096",
+         "discount": 44,
+         "name": "Maureen Lounge Chair in Cloud Grey Fabric",
+         "brand": "By Urban Ladder",
+         "price": 13599,
+         "emi": 7615
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/134017\/product\/Hagen_Cobalt_revised_LP.jpg?1578889219",
+         "discount": 36,
+         "name": "Hagen Lounge Chair in Cobalt Fabric",
+         "brand": "By Chumbak",
+         "price": 24899,
+         "emi": 15935
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/283020\/product\/Genoa_Wing_Chair_CB_LP.jpg?1584353783",
+         "discount": 42,
+         "name": "Genoa Lounge Chair in Cobalt Fabric",
+         "brand": "By Urban Ladder",
+         "price": 32999,
+         "emi": 19139
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/282950\/product\/Morgen_Wing_LP.jpg?1582533728",
+         "discount": 41,
+         "name": "Genoa Lounge Chair in Monochrome Paisley Fabric",
+         "brand": "By Chumbak",
+         "price": 32999,
+         "emi": 19469
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/299087\/product\/Calabah_Swivel_Green_LP.jpg?1597328238",
+         "discount": 51,
+         "name": "Calabah Rattan Outdoor Chair in Green Colour - Set of 1",
+         "brand": "By Chumbak",
+         "price": 26599,
+         "emi": 13033
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/13330\/product\/contour_chair_and_ottoman_replica_blue_replace_LP.jpg?1569471160",
+         "discount": 47,
+         "name": "Contour Lounge Chair in Blue",
+         "brand": "By Chumbak",
+         "price": 84399,
+         "emi": 44731
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/155391\/product\/contour_chair_and_ottoman_replica_indigo_patch_replace_LP.jpg?1569471137",
+         "discount": 42,
+         "name": "Contour Lounge Chair in Indigo Patch Work",
+         "brand": "By Urban Ladder",
+         "price": 84399,
+         "emi": 48951
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/329831\/product\/Brando_Arm_Chair_Cobalt_LP.jpg?1621088781",
+         "discount": 42,
+         "name": "Brando Lounge Chair in Cobalt Fabric",
+         "brand": "By Urban Ladder",
+         "price": 33599,
+         "emi": 19487
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/348561\/product\/Hagen_Lounge_chair_colour_Icy_Turquoise_LP.jpg?1624355214",
+         "discount": 27,
+         "name": "Hagen Lounge Chair in Icy Turquoise Velvet Fabric",
+         "brand": "By Urban Ladder",
+         "price": 24899,
+         "emi": 18176
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/367857\/product\/Dashiell_Lounge_Chair_LP.jpg?1628259149",
+         "discount": 30,
+         "name": "Dashiell Lounge Chair in Navy Blue Fabric",
+         "brand": "By Furncasa",
+         "price": 49884,
+         "emi": 34918
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/328237\/product\/Grace_Accent_Chair_Lava_Rust_1_LP.jpg?1615351627",
+         "discount": 48,
+         "name": "Grace Lounge Chair in Lava Fabric",
+         "brand": "By Urban Ladder",
+         "price": 22999,
+         "emi": 11959
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/334966\/product\/Ikeda_Armchair_Teak_Finish_Olive_Green_LP.jpg?1619170961",
+         "discount": 30,
+         "name": "Ikeda Lounge Chair in Olive Green Fabric",
+         "brand": "By Urban Ladder",
+         "price": 31099,
+         "emi": 21769
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/162604\/product\/Carven_lounge_chair_grey_replace_LP.jpg?1569471096",
+         "discount": 43,
+         "name": "Morgen Lounge Chair in Blue Nightingale",
+         "brand": "By Chumbak",
+         "price": 50598,
+         "emi": 28884
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/366625\/product\/Bergen_Lounge_Chair_Mustard_LP.jpg?1628240491",
+         "discount": 30,
+         "name": "Bergen Lounge Chair in Mustard Fabric",
+         "brand": "By Arra",
+         "price": 51976,
+         "emi": 36383
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/366809\/product\/Georgetown_Lounge_Chair_Green_LP.jpg?1628241493",
+         "discount": 30,
+         "name": "Georgetown Lounge Chair in Green Fabric",
+         "brand": "By Arra",
+         "price": 51976,
+         "emi": 36383
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/367967\/product\/Flannery_Lounge_Chair_LP.jpg?1628259890",
+         "discount": 30,
+         "name": "Flannery Lounge Chair in Grey Fabric",
+         "brand": "By Furncasa",
+         "price": 52151,
+         "emi": 36505
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/367968\/product\/Flora_Lounge_Chair_LP.jpg?1628259890",
+         "discount": 30,
+         "name": "Flora Lounge Chair in Yellow Fabric",
+         "brand": "By Furncasa",
+         "price": 52151,
+         "emi": 36505
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/367855\/product\/Cleo_Lounge_Chair_LP.jpg?1628259148",
+         "discount": 30,
+         "name": "Cleo Lounge Chair in Grey Fabric",
+         "brand": "By Furncasa",
+         "price": 52151,
+         "emi": 36505
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/367854\/product\/Clementine_Lounge_Chair_LP.jpg?1628259147",
+         "discount": 30,
+         "name": "Clementine Lounge Chair in Sky Blue Fabric",
+         "brand": "By Furncasa",
+         "price": 40814,
+         "emi": 28569
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/367969\/product\/Frankie_Lounge_Chair_LP.jpg?1628259891",
+         "discount": 30,
+         "name": "Frankie Lounge Chair in Navy Blue Fabric",
+         "brand": "By Furncasa",
+         "price": 43081,
+         "emi": 30156
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/367970\/product\/Hazel_Lounge_Chair_LP.jpg?1628259892",
+         "discount": 30,
+         "name": "Hazel Lounge Chair in Sea Green Fabric",
+         "brand": "By Furncasa",
+         "price": 43081,
+         "emi": 30156
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/367853\/product\/Callie_Lounge_Chair_LP.jpg?1628259147",
+         "discount": 30,
+         "name": "Callie Lounge Chair in Blue Fabric",
+         "brand": "By Furncasa",
+         "price": 40814,
+         "emi": 28569
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/366680\/product\/Carroll_Lounge_Chair_Maroon_LP.jpg?1628240326",
+         "discount": 30,
+         "name": "Carroll Lounge Chair in Maroon Fabric",
+         "brand": "By Arra",
+         "price": 53141,
+         "emi": 37198
+        },
+        {
+         "image": "https:\/\/www.ulcdn.net\/images\/products\/366681\/product\/Carroll_Lounge_Chair_Grey_LP.jpg?1628240327",
+         "discount": 30,
+         "name": "Carroll Lounge Chair in Blue Fabric",
+         "brand": "By Arra",
+         "price": 53141,
+         "emi": 37198
+        }
+       ]
+}
