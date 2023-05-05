@@ -5,11 +5,15 @@ require("dotenv").config();
 const cors=require("cors");
 const { userRouter } = require("./Routes/user.route");
 const { auth } = require("./Middleware/auth.middleware");
+const { sofaRouter } = require("./Routes/sofa.route");
+const { bedRouter } = require("./Routes/bed.route");
 
 app.use(cors());
 app.use(express.json());
 app.use("/users",userRouter);
 app.use(auth);
+app.use("/sofas",sofaRouter);
+app.use("/bed",bedRouter);
 
 app.listen(process.env.PORT,async()=>{
     try{
