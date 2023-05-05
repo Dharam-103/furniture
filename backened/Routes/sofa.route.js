@@ -34,6 +34,18 @@ sofaRouter.get("/",async(req,res)=>{
 })
 
 
+sofaRouter.get("/:id",async(req,res)=>{
+    const {id}=req.params;
+    try{
+       const data=await SofaModel.findById(id);
+       res.send(data);
+    }catch(err){
+        res.send({"msg":err.message});
+    }
+})
+
+
+
 sofaRouter.post("/add",async(req,res)=>{
      const payload=req.body;
      try{
