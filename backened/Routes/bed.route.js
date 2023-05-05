@@ -33,6 +33,15 @@ bedRouter.get("/",async(req,res)=>{
     }
 })
 
+bedRouter.get("/:id",async(req,res)=>{
+    const {id}=req.params;
+    try{
+       const data=await BedModel.findById(id);
+       res.send(data);
+    }catch(err){
+        res.send({"msg":err.message});
+    }
+})
 
 bedRouter.post("/add",async(req,res)=>{
      const payload=req.body;
