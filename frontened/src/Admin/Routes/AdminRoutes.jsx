@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import AdminHome from "../../Admin/Pages/AdminHome";
-import AdminLogin from "../../Admin/Pages/AdminLogin";
-import AdminRegister from "../../Admin/Pages/AdminRegister";
+import AdminHome from "../Pages/Home_Admin";
+import AdminLogin from "../Pages/Login_Admin";
+import AdminRegister from "../Pages/Register_Admin";
 
 const AdminRoutes = () => {
   return (

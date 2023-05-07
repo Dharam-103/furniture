@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AdminRegister = () => {
+const Product_Admin = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const AdminRegister = () => {
   )
 }
 
-export default AdminRegister
+export default Product_Admin

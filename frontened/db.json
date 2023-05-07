@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "name": "Dibyendu Nath",
+      "email": "dibyendunath911@gmail.com",
+      "phone": "7797728248",
+      "address": "Qtr. No. 205/A Station Road, Near Nazrul Manch Loco Colony",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "email": "dibyendunath911@gmail.com",
+      "password": "12345",
+      "id": 3
+    },
+    {
+      "name": "Dibyendu Nath",
+      "email": "dibyendunath911@gmail.com",
+      "phone": "7797728248",
+      "address": "Qtr. No. 205/A Station Road, Near Nazrul Manch Loco Colony",
+      "password": "tg7y",
+      "id": 4
+    },
+    {
+      "email": "dibyendunath911@gmail.com",
+      "password": "tg7y",
+      "id": 5
+    }
+  ]
+}
