@@ -1,4 +1,4 @@
-import { PRODUCT_FAILURE, PRODUCT_REQUEST, GET_PRODUCT_SUCCESS,} from "./actionType";
+import { PRODUCT_FAILURE, PRODUCT_REQUEST, GET_PRODUCT_SUCCESS,ADD_PRODUCT_SUCCESS} from "./actionType";
 import axios from "axios";
 
 
@@ -28,5 +28,8 @@ export const getSingleProduct = ( id) => (dispatch) =>{
             dispatch({ type: PRODUCT_FAILURE })
         })
 }
+
+
+
 
 
