@@ -5,7 +5,7 @@ const sofaSchema=mongoose.Schema({
       image:{type:String,required:true},
       discount:{type:Number,required:true},
       name:{type:String,required:true},
-      small:{type:String,required:true},
+      small:{type:String},
       brand:{type:String,required:true},
       price:{type:Number,required:true},
       emi:{type:Number,required:true},
