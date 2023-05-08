@@ -6,7 +6,7 @@ const jwt = require('jsonwebtoken');
 require("dotenv").config();
 
 userRouter.post("/register",async(req,res)=>{
-     const{name,email,password}=req.body;
+     const{name,email,password,phone}=req.body;
 
      try{
         const user= await UserModel.findOne({email});
@@ -17,7 +17,7 @@ userRouter.post("/register",async(req,res)=>{
                   if(err){
                        res.send({"err":err.message})
                   }else{
-                      const users=new UserModel({name,email,password:hash});
+                      const users=new UserModel({name,email,password:hash,phone});
                       await users.save();
                       res.send("Users registered successfully !!");
                   }
