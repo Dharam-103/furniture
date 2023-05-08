@@ -19,36 +19,76 @@ import {
     Modal,
     ModalOverlay,
     ModalContent,
+    useToast,
   } from '@chakra-ui/react'
 import { useDisclosure } from '@chakra-ui/react-use-disclosure';
+import { Navigate } from "react-router-dom";
   import React, { useState }  from "react";
 function UserSignup() {
+  const toast = useToast()
     const [showPassword, setShowPassword] = useState(false);
 const { isOpen, onOpen, onClose } = useDisclosure()
-const email = React.useRef(null)
-const password = React.useRef(null)
-const phone = React.useRef(null)
-const name = React.useRef(null)
-const handleSubmit=(e)=>{
-  e.preventDefault();
-  let q1=email.current.value;
-  let q2=password.current.value
-  let q3=name.current.value
-  let q4=phone.current.value
-  console.log(q1,q2)
-  const userdetail={email:q1,password:q2,name:q3,phone:q4}
-  fetch("https://reqres.in/api/login",{
-    method:"POST",
-    headers:{
-      "Content-Type":"application/json",
-    },
-    body:JSON.stringify(userdetail),
-  })
-  .then((res)=>res.json())
-  .then((bag)=>{
-  })
-  .catch((err)=>console.log(err))
-}
+const [name,setName]=useState("")
+    const [email,setEmail]=useState("")
+    const [password,setPassword]=useState("")
+    const [phone,setPhone]=useState(0)
+
+    const handleSubmit=()=>{
+        const payload={
+            name,email,password,phone
+        }
+        console.log(payload)
+        fetch("https://odd-red-antelope-tux.cyclic.app/users/register",{
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify(payload)
+        })
+        .then((res)=>res.json())
+        .then((res)=>{console.log(res)
+          toast({
+            title: 'Signup Successfull.',
+            description: "You are successfully signed in.",
+            status: 'success',
+            duration: 9000,
+            isClosable: true,
+          })
+        })
+        .catch((err)=>console.log(err))
+    }
+  
+// const email = React.useRef(null)
+// const password = React.useRef(null)
+// const phone = React.useRef(null)
+// const name = React.useRef(null)
+// const handleSubmit=()=>{
+//   let q1=email.current.value;
+//   let q2=password.current.value
+//   let q3=name.current.value
+//   let q4=phone.current.value
+//   console.log(q1,q2)
+//   const payload={email:q1,password:q2,name:q3,phone:q4}
+//   axios
+//     .post("https://odd-red-antelope-tux.cyclic.app/users/register",'no-cors', payload)
+//     .then((res) => {
+//       console.log(res);
+//     })
+//     .catch((res) =>console.log(res));
+// };
+
+  // fetch("https://odd-red-antelope-tux.cyclic.app/users/register",{
+  //           mode: 'no-cors',
+  //           method:"POST",
+  //           headers:{
+  //               "Content-Type":"application/json"
+  //           },
+  //           body:JSON.stringify(payload)
+  //       })
+  //       .then((res)=>res.json())
+  //       .then((res)=>console.log(res))
+  //       .catch((err)=>console.log(err))
+// }
 
       
         return (
@@ -99,24 +139,24 @@ const handleSubmit=(e)=>{
               <Box>
                 <FormControl id="firstName" isRequired>
                   <FormLabel>First Name</FormLabel>
-                  <Input type="text" ref={name}/>
+                  <Input type="text" value={name} onChange={(e)=>setName(e.target.value)}/>
                 </FormControl>
               </Box>
               <Box>
                 <FormControl id="lastName">
                   <FormLabel>Contact</FormLabel>
-                  <Input type="number" ref={phone}/>
+                  <Input type="number" value={phone} onChange={(e)=>setPhone(e.target.value)}/>
                 </FormControl>
               </Box>
             </HStack>
             <FormControl id="email" isRequired>
               <FormLabel>Email address</FormLabel>
-              <Input type="email" ref={email}/>
+              <Input type="email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
             </FormControl>
             <FormControl id="password" isRequired>
               <FormLabel>Password</FormLabel>
               <InputGroup>
-                <Input type={showPassword ? 'text' : 'password'} ref={password}/>
+                <Input type={showPassword ? 'text' : 'password'} value={password} onChange={(e)=>setPassword(e.target.value)}/>
                 <InputRightElement h={'full'}>
                   <Button
                     variant={'ghost'}

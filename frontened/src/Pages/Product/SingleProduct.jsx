@@ -19,7 +19,7 @@ import {
 } from '@chakra-ui/react';
 import { StarIcon } from '@chakra-ui/icons';
 import { MdLocalShipping } from 'react-icons/md';
-import styled from "styled-components";
+// import styled from "styled-components";
 
 const SingleProduct = () => {
 
@@ -149,10 +149,10 @@ const SingleProduct = () => {
 
 export default SingleProduct
 
-const div = styled.div`
- @media (max-width: 900px){
-  .singleproduct > Stack{
-     flex-direction:column;
-    }
- }
-`;
+// const div = styled.div`
+//  @media (max-width: 900px){
+//   .singleproduct > Stack{
+//      flex-direction:column;
+//     }
+//  }
+// `;

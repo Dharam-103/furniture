@@ -16,34 +16,46 @@ import {
     FormLabel,
     Input,
     InputGroup,
-    InputRightElement
+    InputRightElement,
+    useToast
   } from '@chakra-ui/react'
 import { useDisclosure } from '@chakra-ui/react-use-disclosure';
 import { VscAccount }  from 'react-icons/vsc';
   import React, { useState }  from "react";
 import UserSignup from './UserSignup';
 function UserLogin() {
+  const toast = useToast()
     const [showPassword, setShowPassword] = useState(false);
 const { isOpen, onOpen, onClose } = useDisclosure()
+
 const email = React.useRef(null)
 const password = React.useRef(null)
 const handleSubmit=(e)=>{
   e.preventDefault();
   let q1=email.current.value;
   let q2=password.current.value
-  console.log(q1,q2)
-  const userdetail={email:q1,password:q2}
-  fetch("https://reqres.in/api/login",{
-    method:"POST",
-    headers:{
-      "Content-Type":"application/json",
-    },
-    body:JSON.stringify(userdetail),
-  })
-  .then((res)=>res.json())
-  .then((bag)=>{
-  })
-  .catch((err)=>console.log(err))
+ 
+  const payload={email:q1,password:q2}
+  fetch("https://odd-red-antelope-tux.cyclic.app/users/login",{
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify(payload)
+        }).then((res)=>res.json())
+        .then((res)=>{
+          localStorage.setItem("token",res.token)
+          toast({
+            title: 'Login Successfull.',
+            description: "You are logged in.",
+            status: 'success',
+            duration: 9000,
+            isClosable: true,
+          })
+          console.log(res)        
+        })
+        .catch((err)=>console.log(err))
+        
 }
 
       
