@@ -1,7 +1,7 @@
 const mongoose=require("mongoose");
 
 
-const chairSchema=mongoose.Schema({
+const bedSchema=mongoose.Schema({
       image:{type:String,required:true},
       discount:{type:Number,required:true},
       name:{type:String,required:true},
@@ -13,8 +13,8 @@ const chairSchema=mongoose.Schema({
 })
 
 
-const ChairModel=mongoose.model("chair",chairSchema);
+const BedModel=mongoose.model("bed",bedSchema);
 
 module.exports={
-    ChairModel
+    BedModel
 }

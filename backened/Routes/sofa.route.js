@@ -1,9 +1,9 @@
 const express=require("express");
-const { FloorModel } = require("../Models/floor.model");
-const floorRouter=express.Router();
+const { SofaModel } = require("../Models/sofa.model");
+const sofaRouter=express.Router();
 
 
-floorRouter.get("/",async(req,res)=>{
+sofaRouter.get("/",async(req,res)=>{
     const {brand,page,limit,sort}=req.query;
      console.log(brand,page,limit,sort);
      let query={};
@@ -26,7 +26,7 @@ floorRouter.get("/",async(req,res)=>{
         if(sort=="desc"){
             sorting={price:-1}
         }
-       const data=await FloorModel.find(query).sort(sorting).skip(skip).limit(limit);
+       const data=await SofaModel.find(query).sort(sorting).skip(skip).limit(limit);
        res.send(data);
     }catch(err){
         res.send({"msg":err.message});
@@ -34,30 +34,42 @@ floorRouter.get("/",async(req,res)=>{
 })
 
 
-floorRouter.post("/add",async(req,res)=>{
+sofaRouter.get("/:id",async(req,res)=>{
+    const {id}=req.params;
+    try{
+       const data=await SofaModel.findById(id);
+       res.send(data);
+    }catch(err){
+        res.send({"msg":err.message});
+    }
+})
+
+
+
+sofaRouter.post("/add",async(req,res)=>{
      const payload=req.body;
      try{
-        await FloorModel.insertMany(payload);
+        await SofaModel.insertMany(payload);
         res.send("Data is added");
      }catch(err){
         res.send({"msg":err.message});
      }
 })
 
-floorRouter.delete("/delete/:id",async(req,res)=>{
+sofaRouter.delete("/delete/:id",async(req,res)=>{
     const{id}=req.params;
     try{
-       await FloorModel.findByIdAndDelete({_id:id});
+       await SofaModel.findByIdAndDelete({_id:id});
        res.send("Data is deleted");
     }catch(err){
         res.send({"msg":err.message});
     }
 })
 
-floorRouter.patch("/update/:id",async(req,res)=>{
+sofaRouter.patch("/update/:id",async(req,res)=>{
     const{id}=req.params;
     try{
-       await FloorModel.findByIdAndUpdate({_id:id},req.body);
+       await SofaModel.findByIdAndUpdate({_id:id},req.body);
        res.send("Data is updated");
     }catch(err){
         res.send({"msg":err.message});
@@ -66,5 +78,5 @@ floorRouter.patch("/update/:id",async(req,res)=>{
 
 
 module.exports={
-    floorRouter
+    sofaRouter
 }

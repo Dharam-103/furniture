@@ -1,9 +1,9 @@
 const express=require("express");
-const { FloorModel } = require("../Models/floor.model");
-const floorRouter=express.Router();
+const { BedModel } = require("../Models/bed.model");
+const bedRouter=express.Router();
 
 
-floorRouter.get("/",async(req,res)=>{
+bedRouter.get("/",async(req,res)=>{
     const {brand,page,limit,sort}=req.query;
      console.log(brand,page,limit,sort);
      let query={};
@@ -26,38 +26,47 @@ floorRouter.get("/",async(req,res)=>{
         if(sort=="desc"){
             sorting={price:-1}
         }
-       const data=await FloorModel.find(query).sort(sorting).skip(skip).limit(limit);
+       const data=await BedModel.find(query).sort(sorting).skip(skip).limit(limit);
        res.send(data);
     }catch(err){
         res.send({"msg":err.message});
     }
 })
 
+bedRouter.get("/:id",async(req,res)=>{
+    const {id}=req.params;
+    try{
+       const data=await BedModel.findById(id);
+       res.send(data);
+    }catch(err){
+        res.send({"msg":err.message});
+    }
+})
 
-floorRouter.post("/add",async(req,res)=>{
+bedRouter.post("/add",async(req,res)=>{
      const payload=req.body;
      try{
-        await FloorModel.insertMany(payload);
+        await BedModel.insertMany(payload);
         res.send("Data is added");
      }catch(err){
         res.send({"msg":err.message});
      }
 })
 
-floorRouter.delete("/delete/:id",async(req,res)=>{
+bedRouter.delete("/delete/:id",async(req,res)=>{
     const{id}=req.params;
     try{
-       await FloorModel.findByIdAndDelete({_id:id});
+       await BedModel.findByIdAndDelete({_id:id});
        res.send("Data is deleted");
     }catch(err){
         res.send({"msg":err.message});
     }
 })
 
-floorRouter.patch("/update/:id",async(req,res)=>{
+bedRouter.patch("/update/:id",async(req,res)=>{
     const{id}=req.params;
     try{
-       await FloorModel.findByIdAndUpdate({_id:id},req.body);
+       await BedModel.findByIdAndUpdate({_id:id},req.body);
        res.send("Data is updated");
     }catch(err){
         res.send({"msg":err.message});
@@ -66,5 +75,5 @@ floorRouter.patch("/update/:id",async(req,res)=>{
 
 
 module.exports={
-    floorRouter
+    bedRouter
 }
