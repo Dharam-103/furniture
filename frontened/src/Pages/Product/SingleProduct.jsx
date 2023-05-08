@@ -19,6 +19,7 @@ import { MdLocalShipping } from 'react-icons/md';
 import {useDispatch, useSelector} from "react-redux";
 import {addToCart, getSingleProduct} from '../../Redux/Sofa/action';
 
+
 const SingleProduct = () => {
 
     // const dispatch = useDispatch();
@@ -159,5 +160,6 @@ const SingleProduct = () => {
         </Box>
     )
 }
+
 
 export default SingleProduct

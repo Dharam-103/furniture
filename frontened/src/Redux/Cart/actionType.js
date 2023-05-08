@@ -1,0 +1,10 @@
+export const CART_REQUEST_PENDING = "HOTEL_REQUEST_PENDING";
+export const CART_REQUEST_FAILURE = "HOTEL_REQUEST_FAILURE";
+/* ------------------------Cart------------------------*/
+
+export const CART_REQUEST_SUCCESS="CART_REQUEST_SUCCESS"
+export const GET_CART_REQUEST_SUCCESS="GET_CART_REQUEST_SUCCESS"
+
+
+
+export const HOTELCART_DELETE="HOTELCART_DELETE"
