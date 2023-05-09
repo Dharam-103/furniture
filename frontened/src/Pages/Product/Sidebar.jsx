@@ -1,88 +1,129 @@
 import {
-    Box, Heading, Input, Checkbox
+    Box, Heading, Input, Checkbox, Text,Button
 } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
 const Sidebar = () => {
     const [searchParams, setSearchParams] = useSearchParams();
-    const initialCategory = searchParams.getAll("category");
+    const initialbrand = searchParams.getAll("brand");
     const initialOrder = searchParams.get("order");
-    const [category, setCategory] = useState(initialCategory || []);
+    const initialPage = searchParams.get("page");
+    const [brand, setbrand] = useState(initialbrand || []);
     const [order, setOrder] = useState(initialOrder || '');
+     const [page,setPage] = useState(+initialPage || 1);
 
     const handleChange = (e) => {
-        let newCategory = [...category];
+        let newbrand = [...brand];
         const value = e.target.value;
 
-        if (newCategory.includes(value)) {
-            newCategory = newCategory.filter((el) => el !== value);
+        if (newbrand.includes(value)) {
+            newbrand = newbrand.filter((el) => el !== value);
         } else {
-            newCategory.push(value);
+            newbrand.push(value);
         }
 
-        setCategory(newCategory)
+        setbrand(newbrand)
     };
 
     const handleSort = (e) => {
         setOrder(e.target.value)
     }
 
+    const handlePage = (value) =>{
+   setPage((prev)=>{
+    if(prev + value === 0){
+        return prev
+    }
+    return prev + value
+   })
+    }
+
     useEffect(() => {
         let params = {
-            category,
+            brand,page
         }
 
         order && (params.order = order);
 
         setSearchParams(params)
-    }, [category, order]);
+    }, [brand, order,page]);
 
     return (
-        <Box textAlign={'left'} border="1px solid black" w='sm' boxShadow={'2xl'}  >
-            <Heading>FILTER BY BRAND</Heading>
-            <br/>
+        <Box textAlign={'left'} border="0px solid black" w={'xs'} boxShadow={'2xl'} mt={10}>
+            <Heading fontSize={'xl'} fontFamily={'body'} fontWeight={500}>FILTER BY BRAND</Heading>
+            <br />
             <Box textAlign={'left'}>
                 <div>
-                    <Checkbox
+                    <input
                         type="checkbox"
                         value={"By Urban Ladder"}
                         onChange={handleChange}
-                        checked={category.includes("By Urban Ladder")}>By Urban Ladder</Checkbox>
+                        checked={brand.includes("By Urban Ladder")} />
+                    <label>By Urban Ladder</label>
                 </div>
 
                 <div>
-                    <Checkbox
-                        defaultChecked
+                    <input
+                        type="checkbox"
                         value={"By Adorn India Sofa"}
                         onChange={handleChange}
-                        checked={category.includes("By Adorn India Sofa")}>By Adorn India Sofa
-                        </Checkbox>    
+                        checked={brand.includes("By Adorn India Sofa")} />
+                    <label>By Adorn India Sofa</label>
                 </div>
 
                 <div>
                     <Checkbox
-                        defaultChecked
+                        type="checkbox"
                         value={"By Urban Ladder Create"}
                         onChange={handleChange}
-                        checked={category.includes("By Urban Ladder Create")}>By Urban Ladder Create
-                        </Checkbox>    
+                        checked={brand.includes("By Urban Ladder Create")}
+                    />
+                    <label>By Urban Ladder Create</label>
                 </div>
 
                 <div>
                     <Checkbox
-                        defaultChecked
+                        type="checkbox"
                         value={"By Albany Sofa"}
                         onChange={handleChange}
-                        checked={category.includes("By Albany Sofa")}>By Albany Sofa
-                        </Checkbox>    
+                        checked={brand.includes("By Albany Sofa")}
+                    />
+                    <label>By Albany Sofa</label>
                 </div>
             </Box>
-
-            <Heading>SORT BY PRICE</Heading>
+            <br />
+            <Heading fontSize={'xl'} fontFamily={'body'} fontWeight={500}>SORT BY PRICE</Heading>
+            <br/>
+            <div onChange={handleSort}>
+                <input
+                    type="radio"
+                    value={"asc"}
+                    defaultChecked={order === "asc"}
+                    name="order"
+                />
+                <label>Low To High</label>
+                <br/>
+                <input
+                    type="radio"
+                    value={"desc"}
+                    defaultChecked={order === "desc"}
+                    name="order"
+                />
+                <label>High To Low</label>
+            </div>
+            <br />
+            <Heading fontSize={'xl'} fontFamily={'body'} fontWeight={500}>Pagination</Heading>
+            <br/>
+            <Box>
+                <Button backgroundColor={'#ff6b6b'} onClick={()=>{handlePage(-1)}}>PREV</Button>
+                <Button>{page}</Button>
+                <Button backgroundColor={'#ff6b6b'} onClick={()=>{handlePage(1)}} >NEXT</Button>
+            </Box>
             <br/>
         </Box>
     )
 }
 
 export default Sidebar
+
