@@ -29,7 +29,18 @@ export const getSingleProduct = ( id) => (dispatch) =>{
         })
 }
 
-
+export const addToCart = (cartData) => (dispatch) => {
+    dispatch({ type: PRODUCT_REQUEST })
+    axios
+        .post("https://odd-red-antelope-tux.cyclic.app/sofas", cartData)
+        .then((res) => {
+            console.log(res.data)
+            dispatch({ type: ADD_PRODUCT_SUCCESS,payload:res.data})
+        })
+        .catch((err) => {
+            dispatch({ type: PRODUCT_FAILURE })
+        })
+}
 
 
 

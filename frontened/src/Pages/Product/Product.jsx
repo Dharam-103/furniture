@@ -22,13 +22,15 @@ const Products = () => {
   const location = useLocation();
   const { sofas } = useSelector((store) => store.productReducer);
   //  console.log({sofas})
-  const [page, setPage] = useState(1);
+  // const [page, setPage] = useState(1);
 
   let obj = {
     params: {
-      category: searchParams.getAll("category"),
+      brand: searchParams.getAll("brand"),
       _sort: searchParams.get("order") && "price",
       _order: searchParams.get("order"),
+      _limit:10,
+      _page:searchParams.get("page")
     }
   };
 
@@ -39,7 +41,7 @@ const Products = () => {
 
   return (
     <Box mt={2}>
-      <Heading color={"pink.300"}>All Sofas</Heading>
+      <Heading color={"#ff6b6b"}>All Sofas</Heading>
       <br />
 
       <Box margin={'auto'} width='90%'>
