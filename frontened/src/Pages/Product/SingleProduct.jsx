@@ -21,8 +21,8 @@ import {addToCart, getSingleProduct} from '../../Redux/Sofa/action';
 
 
 const SingleProduct = () => {
-
-    // const dispatch = useDispatch();
+  const toast=useToast()
+     const dispatch = useDispatch();
     // const location = useLocation();
     // const x = useSelector((store)=>store.productReducer);
     // console.log(x)
@@ -31,21 +31,29 @@ const SingleProduct = () => {
     const { id } = useParams()
 
     const handleCart = (image,name,price) =>{
-        addToCart(image,name,price)
+        console.log(image,name,price)
+        dispatch(addToCart(image,name,price))
+        toast({
+            title: 'Added Product Successfully',
+            description: "Your item is added to cart",
+            status: 'success',
+            duration: 3000,
+            isClosable: true,
+          })
     }
     
     useEffect(() => {
         axios.get(`https://odd-red-antelope-tux.cyclic.app/sofas/${id}`)
             .then((res) => {
-                console.log("res",res.data)
+                // console.log("res",res.data)
                 setData(res.data)
             }).catch((err) => {
-                console.log(err)
+                // console.log(err)
             })
     }, [id]) 
 
     
-    console.log("data",data)
+    // console.log("data",data)
     return (
         <Box width={'80%'} margin='auto' mt={5}>
             <SimpleGrid columns={{ lg: 2, md: 1, sm: 1 }} gap={3}>
@@ -148,7 +156,7 @@ const SingleProduct = () => {
                             transform: 'translateY(2px)',
                             boxShadow: 'lg',
                         }}
-                     onClick={handleCart(data.image,data.name,data.price)}
+                     onClick={()=>{handleCart(data.image,data.name,data.price)}}
                     >
                         Add to cart
                     </Button>

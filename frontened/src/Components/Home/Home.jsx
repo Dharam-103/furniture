@@ -1,7 +1,8 @@
 import React from 'react'
 import { Slideshow } from './Slider'
-import { Box, Center, Stack, VStack,Text,Image,Flex } from '@chakra-ui/react'
+import { Box, Center, Stack, VStack,Text,Image,Flex, Input, Button } from '@chakra-ui/react'
 import Carousel from './Carousel'
+import Carousel2 from './Carousel2'
 
 const Home = () => {
   return (
@@ -54,6 +55,28 @@ const Home = () => {
       </Center>
       <br/>
       <Carousel/>
+      <br/>
+      <Center>
+        <Box style={{fontFamily:"Mrs Eaves XL Serif,serif",fontSize:"28px",lineHeight:"32px"}}>Our New Locations</Box>
+      </Center>
+      <Center>
+      <Box mt={"1%"} border={"1px solid #b8622d"} w={"15%"}></Box>
+      </Center>
+      <br/>
+      <Carousel2/>
+      <br/>
+      <br/>
+      <Center>
+        <Box style={{fontFamily:"Mrs Eaves XL Serif,serif",fontSize:"28px",lineHeight:"32px"}}>SIGN UP AND GET A CHANCE TO WIN THE GIVEAWAY OF THE WEEK.</Box>
+      </Center>
+      <br/>
+      <Center>
+        <Flex>
+          <Input placeholder='Your EMAILID'/>
+          <Button backgroundColor={'#b8622d'}>SUBSCRIBE</Button>
+        </Flex>
+      </Center>
+      <br/>
     </div>
   )
 }
