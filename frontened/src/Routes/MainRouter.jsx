@@ -7,6 +7,7 @@ import CartPage from '../Pages/Cart/CartPage'
 import SingleProduct from '../Pages/Product/SingleProduct';
 import Sofa from "../Pages/Product/Sofa";
 import Home from "../Components/Home/Home";
+import Checkout from '../Pages/Payment/Checkout'
 
 const MainRouter = () => {
   return (
@@ -22,6 +23,7 @@ const MainRouter = () => {
             <Route path='/signup' element={<UserSignup/>}/>
         <Route path='/login' element={<UserLogin/>}/>
         <Route path='/cart' element={<CartPage/>}/>
+        <Route path='/checkout' element={<Checkout/>}/>
         </Routes>
 
     </div>
