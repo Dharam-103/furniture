@@ -35,7 +35,7 @@ function ProductCard({ _id, name, price, image, brand }) {
                 {brand}
             </Text>
             <Text fontWeight={600} fontSize={'xl'}>
-                ₹.{price}
+            ₹.{price}
             </Text>
            
         </Box>

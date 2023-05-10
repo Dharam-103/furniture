@@ -5,9 +5,9 @@ import axios from "axios";
 export const getProducts = (paramobj) => (dispatch) =>{
     dispatch({ type: PRODUCT_REQUEST })
     axios
-        .get("https://odd-red-antelope-tux.cyclic.app/sofas", paramobj)
+        .get(`https://odd-red-antelope-tux.cyclic.app/sofas`,paramobj)
         .then((res) => {
-            //  console.log(res.data)
+              console.log(res.data)
             dispatch({ type: GET_PRODUCT_SUCCESS , payload:res.data})
         })
         .catch(() => {
@@ -29,13 +29,19 @@ export const getSingleProduct = ( id) => (dispatch) =>{
         })
 }
 
-export const addToCart = (cartData) => (dispatch) => {
+
+export const addToCart = (image,name,price) => (dispatch) => {
+    let cartData = {image,name,price,quantity:1,total:price}
     dispatch({ type: PRODUCT_REQUEST })
     axios
-        .post("https://odd-red-antelope-tux.cyclic.app/sofas", cartData)
+    .post("https://odd-red-antelope-tux.cyclic.app/cart/addtocart", cartData,{
+        headers:{
+            "Authorization":`Bearer ${localStorage.getItem("token")}`
+        },
+    })
         .then((res) => {
-            console.log(res.data)
-            dispatch({ type: ADD_PRODUCT_SUCCESS,payload:res.data})
+            console.log("cart",res)
+            dispatch({ type: ADD_PRODUCT_SUCCESS})
         })
         .catch((err) => {
             dispatch({ type: PRODUCT_FAILURE })

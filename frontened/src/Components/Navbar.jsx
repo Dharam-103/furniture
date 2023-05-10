@@ -310,7 +310,7 @@ const NAV_ITEMS= [
   // },
   {
     label: 'Sofas & Recliners',
-    href: '#',
+    href: '/sofas',
   },
   {
     label: 'Living',

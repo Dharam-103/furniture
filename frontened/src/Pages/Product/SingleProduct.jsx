@@ -29,6 +29,10 @@ const SingleProduct = () => {
     
     const [data, setData] = useState({})
     const { id } = useParams()
+
+    const handleCart = (image,name,price) =>{
+        addToCart(image,name,price)
+    }
     
     useEffect(() => {
         axios.get(`https://odd-red-antelope-tux.cyclic.app/sofas/${id}`)
@@ -144,7 +148,7 @@ const SingleProduct = () => {
                             transform: 'translateY(2px)',
                             boxShadow: 'lg',
                         }}
-                    //  onClick={addToCart()}
+                     onClick={handleCart(data.image,data.name,data.price)}
                     >
                         Add to cart
                     </Button>

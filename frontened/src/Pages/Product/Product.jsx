@@ -27,10 +27,10 @@ const Products = () => {
   let obj = {
     params: {
       brand: searchParams.getAll("brand"),
-      _sort: searchParams.get("order") && "price",
-      _order: searchParams.get("order"),
-      _limit:10,
-      _page:searchParams.get("page")
+      sort: searchParams.get("sort"),
+      order: searchParams.get("sort"),
+      limit:searchParams.get("limit"),
+      page:searchParams.get("page")
     }
   };
 

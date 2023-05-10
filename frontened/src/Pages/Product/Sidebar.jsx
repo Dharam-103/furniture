@@ -10,9 +10,10 @@ const Sidebar = () => {
     const initialOrder = searchParams.get("order");
     const initialPage = searchParams.get("page");
     const [brand, setbrand] = useState(initialbrand || []);
-    const [order, setOrder] = useState(initialOrder || '');
+    const [sort, setSort] = useState(initialOrder || '');
      const [page,setPage] = useState(+initialPage || 1);
-
+   const limit=10;
+   
     const handleChange = (e) => {
         let newbrand = [...brand];
         const value = e.target.value;
@@ -27,7 +28,8 @@ const Sidebar = () => {
     };
 
     const handleSort = (e) => {
-        setOrder(e.target.value)
+        console.log(e.target.value)
+        setSort(e.target.value)
     }
 
     const handlePage = (value) =>{
@@ -41,13 +43,13 @@ const Sidebar = () => {
 
     useEffect(() => {
         let params = {
-            brand,page
+            brand,page,limit
         }
 
-        order && (params.order = order);
+        sort && (params.sort = sort);
 
         setSearchParams(params)
-    }, [brand, order,page]);
+    }, [brand,sort,page,limit]);
 
     return (
         <Box textAlign={'left'} border="0px solid black" w={'xs'} boxShadow={'2xl'} mt={10}>
@@ -99,16 +101,16 @@ const Sidebar = () => {
                 <input
                     type="radio"
                     value={"asc"}
-                    defaultChecked={order === "asc"}
-                    name="order"
+                    defaultChecked={sort === "asc"}
+                    name="sort"
                 />
                 <label>Low To High</label>
                 <br/>
                 <input
                     type="radio"
                     value={"desc"}
-                    defaultChecked={order === "desc"}
-                    name="order"
+                    defaultChecked={sort === "desc"}
+                    name="sort"
                 />
                 <label>High To Low</label>
             </div>
