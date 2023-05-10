@@ -41,8 +41,8 @@ const Products = () => {
 
   return (
     <Box mt={2}>
-      <Heading color={"#ff6b6b"}>All Sofas</Heading>
-      <br />
+      {/* <Heading color={"#ff6b6b"}>All Sofas</Heading>
+      <br /> */}
 
       <Box margin={'auto'} width='90%'>
         <SimpleGrid columns={{ lg: 4, md: 2, sm: 1 }} gap={5}>

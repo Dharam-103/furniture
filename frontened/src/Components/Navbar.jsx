@@ -314,39 +314,39 @@ const NAV_ITEMS= [
   },
   {
     label: 'Living',
-    href: '#',
+    href: '/sofas',
   },
   {
     label: 'Bedrooms & Mattresses',
-    href: '#',
+    href: '/sofas',
   },
   {
     label: 'Dining',
-    href: '#',
+    href: '/sofas',
   },
   {
     label: 'Storage',
-    href: '#',
+    href: '/sofas',
   },
   {
     label: 'Study',
-    href: '#',
+    href: '/sofas',
   },
   {
     label: 'Outdoor',
-    href: '#',
+    href: '/sofas',
   },
   {
     label: 'Lighting & Decor',
-    href: '#',
+    href: '/sofas',
   },
   {
     label: 'Interiors',
-    href: '#',
+    href: '/sofas',
   },
   {
     label: 'Trending',
-    href: '#',
+    href: '/sofas',
   },
 ];
 

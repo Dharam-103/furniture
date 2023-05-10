@@ -4,15 +4,17 @@ import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 import { useDispatch, useSelector } from 'react-redux'
 import { deleteCart, getCart, updateCart, updateCartDec } from '../../Redux/Cart/action'
 import { RxCross2 } from "react-icons/rx";
+import { Link } from 'react-router-dom'
 
 const CartPage = () => {
   const dispatch=useDispatch()
  const data = useSelector(store=>store.CartReducer.cart)
- const totals = data.reduce(
+ console.log(data)
+ const totals = data?.reduce(
   (accumulator, currentValue) => accumulator + currentValue.total,
   0
 );
- //setTotal(totals)
+//  setTotal(totals)
   useEffect(()=>{
     dispatch(getCart) 
  },[])
@@ -28,7 +30,8 @@ const handleDecrease=(id,total,price,quantity)=>{
   console.log(id)
   dispatch(updateCartDec(id,total,price,quantity)).then(()=>dispatch(getCart))
 }
-  return (
+  
+return(
     <div style={{height:"auto"}}>
       <Box mt={30}>
         <Box w={"45%"} m={"auto"} display={"flex"}>
@@ -105,7 +108,7 @@ const handleDecrease=(id,total,price,quantity)=>{
       </Box>
       <Box mb={2} mt={8}>
       <Button w={"48%"} variant={"ghost"} color={'orange.500'} mr={3} _hover={{color:"white",bg:"orange.500"}}>Continue Shopping</Button>
-      <Button w={"48%"} bg={"orange.500"} color={"white"} _hover={{color:"orange.500",bg:"white"}}>CHECKOUT</Button>
+      <Link to="/checkout"><Button w={"48%"} bg={"orange.500"} color={"white"} _hover={{color:"orange.500",bg:"white"}}>CHECKOUT</Button></Link>
       </Box>
     </Box>
         </Box>
