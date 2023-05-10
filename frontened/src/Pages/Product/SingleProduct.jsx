@@ -144,7 +144,7 @@ const SingleProduct = () => {
                             transform: 'translateY(2px)',
                             boxShadow: 'lg',
                         }}
-                     onClick={addToCart()}
+                    //  onClick={addToCart()}
                     >
                         Add to cart
                     </Button>

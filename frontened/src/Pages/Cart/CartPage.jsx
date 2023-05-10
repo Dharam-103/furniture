@@ -2,16 +2,32 @@ import React, { useEffect, useState } from 'react'
 import { Card,Box,Image,Heading,Button } from '@chakra-ui/react'
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react'
 import { useDispatch, useSelector } from 'react-redux'
-import { getCart } from '../../Redux/Cart/action'
+import { deleteCart, getCart, updateCart, updateCartDec } from '../../Redux/Cart/action'
 import { RxCross2 } from "react-icons/rx";
+
 const CartPage = () => {
   const dispatch=useDispatch()
-  const data = useSelector(store=>store.CartReducer.cart)
-  console.log(data)
+ const data = useSelector(store=>store.CartReducer.cart)
+ const totals = data.reduce(
+  (accumulator, currentValue) => accumulator + currentValue.total,
+  0
+);
+ //setTotal(totals)
+  useEffect(()=>{
+    dispatch(getCart) 
+ },[])
 
-//   useEffect(()=>{
-//     dispatch(getCart) 
-//  },[])
+ const handleDelete=(id)=>{
+  dispatch(deleteCart(id)).then(()=>dispatch(getCart))
+}
+const handleIncrease=(id,total,price,quantity)=>{
+  console.log(id)
+  dispatch(updateCart(id,total,price,quantity)).then(()=>dispatch(getCart))
+}
+const handleDecrease=(id,total,price,quantity)=>{
+  console.log(id)
+  dispatch(updateCartDec(id,total,price,quantity)).then(()=>dispatch(getCart))
+}
   return (
     <div style={{height:"auto"}}>
       <Box mt={30}>
@@ -49,15 +65,15 @@ const CartPage = () => {
   <Heading mt={5} textAlign={"center"} fontSize={"15px"} size='xl'>By {new Date().getDate()+4}-{new Date().getMonth()+1}-{new Date().getFullYear()}</Heading></Box>
   <Box> <Heading textAlign={"left"} fontSize={"20px"} size='xl'>Quantity</Heading>
   <Box mt={5} display={"flex"} >
-    <Button colorScheme='orange' size={"sm"}>-</Button>
+    <Button colorScheme='orange' size={"sm"} isDisabled={el.quantity===1} onClick={()=>handleDecrease(el._id,el.total,el.price,el.quantity)}>-</Button>
     <Heading fontSize={"25px"}>{el.quantity}</Heading>
-    <Button  colorScheme='orange' size={"sm"}>+</Button>
+    <Button  colorScheme='orange' size={"sm"} isDisabled={el.quantity===5} onClick={()=>handleIncrease(el._id,el.total,el.price,el.quantity)}>+</Button>
     </Box></Box>
     <Box> <Heading textAlign={"left"} fontSize={"20px"} size='xl'>Total</Heading>
-  <Heading mt={5} textAlign={"center"} fontSize={"15px"} size='xl'>₹{el.price}</Heading></Box>
+  <Heading mt={5} textAlign={"center"} fontSize={"15px"} size='xl'>₹{el.total}</Heading></Box>
   </Box>
   <Box ml={5}>
-  <RxCross2 fontSize={30}/>
+  <RxCross2 fontSize={30} onClick={()=>handleDelete(el._id)}/>
   </Box>
   
 </Card>
@@ -73,7 +89,7 @@ const CartPage = () => {
       <Heading textAlign={"left"} fontSize={"20px"} color={"orange.500"}>Apply Coupon/Vouchers</Heading>
       <Box mt={8} mb={2} display={"flex"} justifyContent={"space-between"}>
       <p fontSize={"15px"} >Cart Total</p>
-      <p fontSize={"15px"} >₹5000</p>
+      <p fontSize={"15px"} >₹{totals}</p>
       </Box>
       <Box mb={2} display={"flex"} justifyContent={"space-between"}>
       <p fontSize={"15px"} >Delivery Charges</p>
@@ -81,15 +97,15 @@ const CartPage = () => {
       </Box>
       <Box mb={2} display={"flex"} justifyContent={"space-between"}>
       <p fontSize={"15px"} >Total Payable Amount</p>
-      <p fontSize={"15px"} >₹5000</p>
+      <p fontSize={"15px"} >₹{totals}</p>
       </Box>
       <Box mb={2} mt={3} display={"flex"} justifyContent={"space-between"}>
       <Heading fontSize={"15px"} >Booking Amount (Pay Now)</Heading>
-      <Heading fontSize={"15px"} >₹5000</Heading>
+      <Heading fontSize={"15px"} >₹{totals}</Heading>
       </Box>
       <Box mb={2} mt={8}>
-      <Button w={"48%"} variant={"ghost"} color={'orange.500'}>Continue Shopping</Button>
-      <Button w={"48%"} bg={"orange.500"} color={"white"}>CHECKOUT</Button>
+      <Button w={"48%"} variant={"ghost"} color={'orange.500'} mr={3} _hover={{color:"white",bg:"orange.500"}}>Continue Shopping</Button>
+      <Button w={"48%"} bg={"orange.500"} color={"white"} _hover={{color:"orange.500",bg:"white"}}>CHECKOUT</Button>
       </Box>
     </Box>
         </Box>

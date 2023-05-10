@@ -101,7 +101,7 @@ function Navbar() {
          <button style={{border:"none",cursor:"pointer",marginBottom:"2px"}} >
           <BsBagHeartFill fontSize="25px"onClick={Gotocart} />
           </button>
-          <Button
+          {/* <Button
             as={'a'}
             display={{ base: 'none', md: 'inline-flex' }}
             fontSize={'sm'}
@@ -113,7 +113,7 @@ function Navbar() {
               bg: 'pink.300',
             }}>
             Admin
-          </Button>
+          </Button> */}
          
         </Stack>
       </Flex>
