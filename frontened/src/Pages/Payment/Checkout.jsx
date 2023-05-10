@@ -37,7 +37,7 @@ const Checkout = () => {
     event.preventDefault();
     // Handle form submission
     alert("Payment submitted successfully!");
-    <Link to="/"></Link>
+    window.location.href="/"
   };
 
   return (
@@ -60,7 +60,7 @@ const Checkout = () => {
           margin="normal"
         />
         <FormControl className={classes.formControl} fullWidth>
-          <InputLabel id="payment-method-label">Payment method</InputLabel>
+          <InputLabel id="payment-method-label" maxWidth="50px">Payment method</InputLabel>
           <Select
             labelId="payment-method-label"
             id="payment-method"
