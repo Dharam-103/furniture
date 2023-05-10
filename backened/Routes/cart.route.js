@@ -13,18 +13,11 @@ cartRouter.get("/getcart",async(req,res)=>{
 })
 
 cartRouter.post("/addtocart",async(req,res)=>{
-    const {userID,image,name,price,productID,total,quantity}=req.body;
+   
     try{
-       let item=await CartModel.findOne({userID});
-       if(item){
-          item.quantity+=quantity;
-          res.send("quantity update")
-       }else{
-         let data=new CartModel({userID,image,name,price,productID,total,quantity});
+       let data=new CartModel(req.body);
          await data.save();
-         res.send("Added in cart");
-       }
-       
+         res.send("Added in cart");  
     }catch(err){
         res.send(err.message);
     }
@@ -35,12 +28,12 @@ cartRouter.patch("/updatecart/:id",async(req,res)=>{
     const {id}=req.params;
     const cart= await CartModel.findOne({_id:id})
     try {
-        if(req.body.id!==cart.userID){
+        if(req.body.userID!==cart.userID){
             res.status(200).send({"msg":`You are not authoried for this action`})
 
         }else{
             await CartModel.findByIdAndUpdate({_id:id},req.body)
-            res.status(200).send({"msg":`The note with id:${id} has been updated`})
+            res.status(200).send({"msg":`The cart with id:${id} has been updated`})
 
         }
     } catch (err) {
@@ -53,12 +46,12 @@ cartRouter.delete("/deletecart/:id",async(req,res)=>{
     const {id}=req.params;
     const cart= await CartModel.findOne({_id:id});
     try {
-        if(req.body.id!==note.userID){
+        if(req.body.userID!==cart.userID){
             res.status(200).send({"msg":`You are not authoried for this action`})
 
         }else{
-            await CartModel.findByIdAndUpdate({_id:id})
-            res.status(200).send({"msg":`The note with id:${id} has been deleted`})
+            await CartModel.findByIdAndDelete({_id:id})
+            res.status(200).send({"msg":`The cart with id:${id} has been deleted`})
 
         }
     } catch (err) {
@@ -69,3 +62,6 @@ cartRouter.delete("/deletecart/:id",async(req,res)=>{
 module.exports={
     cartRouter
 }
+
+
+
