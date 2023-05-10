@@ -39,7 +39,7 @@ const Checkout = () => {
     alert("Payment submitted successfully!");
     window.location.href="/"
   };
-
+ //done
   return (
     <Paper className={classes.root}>
       <Typography variant="h5" align="center" gutterBottom>
