@@ -26,10 +26,21 @@ import {
 import { BsBagHeartFill } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
 import UserLogin from '../Pages/UserLoginSignup/UserLogin';
+import { useNavigate } from 'react-router-dom';
 
 
 function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
+  let navigatehome = useNavigate(); 
+  const Imagehome = () =>{ 
+    let path = `/`; 
+    navigatehome(path);
+  }
+  let navigate = useNavigate();
+  const Gotocart = () =>{ 
+    let path = `/cart`; 
+    navigate(path);
+  }
 
   return (
     <Box w={"80%"} m={"auto"}>
@@ -62,7 +73,7 @@ function Navbar() {
             fontFamily={'heading'}
             color={useColorModeValue('gray.800', 'white')}>
              <Box style={{cursor:"pointer"}}>
-              <Image  src="https://i.postimg.cc/J4Zzy6mv/logo.png" alt='LOGO' width="20" marginTop="5px"/>
+              <Image onClick={Imagehome} src="https://i.postimg.cc/J4Zzy6mv/logo.png" alt='LOGO' width="20" marginTop="5px"/>
               </Box>
           </Text>
 
@@ -87,12 +98,10 @@ function Navbar() {
          <button style={{border:"none",cursor:"pointer"}} >
          <AiOutlineHeart fontSize={"25px"}/>
          </button>
-         
-         <button style={{border:"none",cursor:"pointer"}} >
-
-          <BsBagHeartFill fontSize="25px" />
+         <button style={{border:"none",cursor:"pointer",marginBottom:"2px"}} >
+          <BsBagHeartFill fontSize="25px"onClick={Gotocart} />
           </button>
-          <Button
+          {/* <Button
             as={'a'}
             display={{ base: 'none', md: 'inline-flex' }}
             fontSize={'sm'}
@@ -104,7 +113,7 @@ function Navbar() {
               bg: 'pink.300',
             }}>
             Admin
-          </Button>
+          </Button> */}
          
         </Stack>
       </Flex>
