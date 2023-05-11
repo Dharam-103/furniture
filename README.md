@@ -32,7 +32,7 @@ Frontened deployment link: <a href="https://melodious-axolotl-087a31.netlify.app
    <li>pagination</li>
 </ul>
 <h1 align="center">Home page</h1>
-![Screenshot (30)](https://github.com/Dharam-103/furniture/assets/105914238/70979017-c060-4d03-b17c-33c368629848)
+![Screenshot (31)](https://github.com/Dharam-103/furniture/assets/105914238/968d73a3-44f1-4439-848f-941762746e4b)
 
 <h1 align="center">Product page</h1>
 ![Screenshot (31)](https://github.com/Dharam-103/furniture/assets/105914238/ff550283-9e26-4c83-a7ff-5378c0ae1c7c)
