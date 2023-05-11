@@ -21,3 +21,13 @@ Frontened deployment link: <a href="https://melodious-axolotl-087a31.netlify.app
    <li>jsonwebtoken</li>
    <li>bcrypt</li>
 </ul>
+
+<h1 align="left">Features:-</h1>
+<ul>
+  <li>Login and sign page</li>
+   <li>Product page</li>
+   <li>Single product page</li>
+   <li>Filtering</li>
+   <li>Sorting</li>
+   <li>pagination</li>
+</ul>
