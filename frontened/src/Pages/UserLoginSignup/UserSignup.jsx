@@ -24,6 +24,7 @@ import {
 import { useDisclosure } from '@chakra-ui/react-use-disclosure';
 import { Navigate } from "react-router-dom";
   import React, { useState }  from "react";
+import axios from 'axios';
 function UserSignup() {
   const toast = useToast()
     const [showPassword, setShowPassword] = useState(false);
@@ -38,14 +39,7 @@ const [name,setName]=useState("")
             name,email,password,phone
         }
         console.log(payload)
-        fetch("https://odd-red-antelope-tux.cyclic.app/users/register",{
-            method:"POST",
-            headers:{
-                "Content-Type":"application/json"
-            },
-            body:JSON.stringify(payload)
-        })
-        .then((res)=>res.json())
+        axios.post("https://odd-red-antelope-tux.cyclic.app/users/register",payload)
         .then((res)=>{console.log(res)
           toast({
             title: 'Signup Successfull.',
@@ -56,42 +50,9 @@ const [name,setName]=useState("")
           })
         })
         .catch((err)=>console.log(err))
+        
     }
-  
-// const email = React.useRef(null)
-// const password = React.useRef(null)
-// const phone = React.useRef(null)
-// const name = React.useRef(null)
-// const handleSubmit=()=>{
-//   let q1=email.current.value;
-//   let q2=password.current.value
-//   let q3=name.current.value
-//   let q4=phone.current.value
-//   console.log(q1,q2)
-//   const payload={email:q1,password:q2,name:q3,phone:q4}
-//   axios
-//     .post("https://odd-red-antelope-tux.cyclic.app/users/register",'no-cors', payload)
-//     .then((res) => {
-//       console.log(res);
-//     })
-//     .catch((res) =>console.log(res));
-// };
-
-  // fetch("https://odd-red-antelope-tux.cyclic.app/users/register",{
-  //           mode: 'no-cors',
-  //           method:"POST",
-  //           headers:{
-  //               "Content-Type":"application/json"
-  //           },
-  //           body:JSON.stringify(payload)
-  //       })
-  //       .then((res)=>res.json())
-  //       .then((res)=>console.log(res))
-  //       .catch((err)=>console.log(err))
-// }
-
-      
-        return (
+          return (
           <>
           <Text onClick={onOpen} align={'center'}>
                 Sign up
