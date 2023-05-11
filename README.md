@@ -8,3 +8,16 @@ Frontened deployment link: <a href="https://melodious-axolotl-087a31.netlify.app
    <li>Mohd. waseem khan</li>
    <li>Dibyendu nath</li>
 </ul>
+
+<h1 align="left">Tech Stack:-</h1>
+<ul>
+  <li>React</li>
+   <li>Redux</li>
+   <li>Chakra UI</li>
+   <li>Nodejs</li>
+   <li>Expressjs</li>
+   <li>Mongodb</li>
+   <li>Mongoose</li>
+   <li>jsonwebtoken</li>
+   <li>bcrypt</li>
+</ul>
