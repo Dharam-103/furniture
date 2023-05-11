@@ -1,0 +1,1 @@
+<h1 align="center"`>Urban Ladder is an omnichannel furniture and decor retailer based out of Bangalore, India. Urban Ladder currently has 3 stores in Bangalore and distribution across 75+ cities in India through its website.</h1>
