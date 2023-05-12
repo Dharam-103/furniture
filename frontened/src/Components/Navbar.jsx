@@ -25,9 +25,8 @@ import {
 } from "@chakra-ui/react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BsBagHeartFill } from "react-icons/bs";
-import { Link as RouterLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import UserLogin from "../Pages/UserLoginSignup/UserLogin";
-import AdminRegister from "./Admin/AdminRegister";
 
 function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
@@ -114,6 +113,7 @@ function Navbar() {
           </button>
 
           {/* <RouterLink to="/adminregiser"> */}
+          <NavLink to="/adminregister">
             <Button
               as={"a"}
               display={{ base: "none", md: "inline-flex" }}
@@ -126,8 +126,9 @@ function Navbar() {
                 bg: "pink.300",
               }}
             >
-              <AdminRegister />
+              Admin
             </Button>
+          </NavLink>
           {/* </RouterLink> */}
         </Stack>
       </Flex>

@@ -11,6 +11,7 @@ import PrivateRoute from "./PrivateRoute";
 
 import Checkout from "../Pages/Payment/Checkout";
 import AdminRegister from "../Components/Admin/AdminRegister";
+import AdminLogin from "../Components/Admin/AdminLogin";
 
 const MainRouter = () => {
   return (
@@ -23,7 +24,8 @@ const MainRouter = () => {
         <Route path="/signup" element={<UserSignup />} />
         <Route path="/login" element={<UserLogin />} />
 
-        <Route path="/adminregiser" element={<AdminRegister />} />
+        <Route path="/adminregister" element={<AdminRegister />} />
+        <Route path="/adminlogin" element={<AdminLogin />} />
 
         <Route
           path="/cart"
