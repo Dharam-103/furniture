@@ -35,4 +35,3 @@ Frontened deployment link: <a href="https://melodious-axolotl-087a31.netlify.app
 </ul>
 
 <h1 align="center">Home Page</h1>
-<img src="https://github.com/Dharam-103/furniture/blob/master/Screenshot%20(30).png" alt="home"/>
