@@ -30,6 +30,8 @@ Frontened deployment link: <a href="https://melodious-axolotl-087a31.netlify.app
    <li>Filtering</li>
    <li>Sorting</li>
    <li>pagination</li>
+     <li>Add To Cart</li>
+   <li>Payment Page</li>
 </ul>
 
 
