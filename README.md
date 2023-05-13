@@ -36,6 +36,7 @@ https://sensational-starship-ce568f.netlify.app/
      <li>Add To Cart</li>
    <li>Payment Page</li>
 </ul>
+
 ## Home Page
 
 ![home page](https://github.com/Dharam-103/furniture/assets/110045723/3eae1fdc-3bbc-4fae-8ef1-3d7746f49ddf)
